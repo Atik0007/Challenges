@@ -7,5 +7,94 @@ $primary-color:hsl(25, 97%, 53%);
 $white-colr:hsl(0, 0%, 100%);
 $Light_Grey-color: hsl(217, 12%, 63%);
 $Medium_Grey-color: hsl(216, 12%, 54%);
+$Dark_Grey-color: hsla(216, 12%, 43%, 0.445);
 $Dark_Blue-colr: hsl(213, 19%, 18%);
 $Very_Dark_Blue-color: hsl(216, 12%, 8%);
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: $Very_Dark_Blue-color;
+}
+.position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color:$Dark_Blue-colr ;
+    width: 24.5rem;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+/* icon */
+.icon{
+    padding-bottom: 2rem;
+    img{
+    display: block;
+    
+    border-radius: 50%;
+    width: 40px;
+    height: 40x;
+    padding: 2vmin;
+    background-color: $Dark_Grey-color;
+    }
+    }
+
+.container{
+    padding-bottom: 2rem;
+    
+    h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-bottom: .5rem; 
+        color: $white-colr; 
+    }
+    p{
+        font-size:15px;  
+        color: $Medium_Grey-color;
+    }
+}
+.number-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 1vmin;
+        font-size: 1.2rem;
+        font-weight: 700;
+        width: 40px;
+        height: 40px;
+        background-color: $Dark_Grey-color;
+        color: $Medium_Grey-color;
+        &:hover{
+            background-color: $primary-color;
+            color: $white-colr;
+        }
+        
+        
+    }
+}
+/* button */
+.btn{
+    button{
+        font-size: .9rem;
+        font-weight: 700;
+        padding: .7rem 3rem;
+        border-radius: 2rem;
+        width: 100%;
+        background-color: $primary-color;
+        color: $white-colr;
+        border: none;
+        letter-spacing: 2px;
+        &:hover{
+            background-color: $white-colr;
+            color: $primary-color;
+        }
+    }
+}
+

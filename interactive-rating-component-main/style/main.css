@@ -4,4 +4,115 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+}
+
+.position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #252d37;
+  width: 24.5rem;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+/* icon */
+.icon {
+  padding-bottom: 2rem;
+}
+
+.icon img {
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40x;
+  padding: 2vmin;
+  background-color: rgba(96, 107, 123, 0.445);
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.container h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: .5rem;
+  color: white;
+}
+
+.container p {
+  font-size: 15px;
+  color: #7c8798;
+}
+
+.number-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.number-all p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding: 1vmin;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(96, 107, 123, 0.445);
+  color: #7c8798;
+}
+
+.number-all p:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+/* button */
+.btn button {
+  font-size: .9rem;
+  font-weight: 700;
+  padding: .7rem 3rem;
+  border-radius: 2rem;
+  width: 100%;
+  background-color: #fb7413;
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.btn button:hover {
+  background-color: white;
+  color: #fb7413;
+}
 /*# sourceMappingURL=main.css.map */
