@@ -39,7 +39,7 @@ body {
   display: block;
   border-radius: 50%;
   width: 40px;
-  height: 40x;
+  height: 40px;
   padding: 2vmin;
   background-color: rgba(96, 107, 123, 0.445);
 }
@@ -60,7 +60,24 @@ body {
   color: #7c8798;
 }
 
-.number-all {
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,10 +87,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   padding-bottom: 2rem;
 }
 
-.number-all p {
+.number input {
+  display: none;
+}
+
+.number label {
+  border: 1px solid rgba(96, 107, 123, 0.445);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-weight: 700;
+  background-color: rgba(96, 107, 123, 0.445);
+  color: #7c8798;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,22 +112,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 50%;
-  padding: 1vmin;
-  font-size: 1.2rem;
-  font-weight: 700;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(96, 107, 123, 0.445);
-  color: #7c8798;
+  cursor: pointer;
 }
 
-.number-all p:hover {
+.number label:hover {
   background-color: #fb7413;
   color: white;
 }
 
+.number input:checked + label {
+  background: #7c8798;
+  color: white;
+}
+
 /* button */
+.btn {
+  width: 100%;
+}
+
 .btn button {
   font-size: .9rem;
   font-weight: 700;

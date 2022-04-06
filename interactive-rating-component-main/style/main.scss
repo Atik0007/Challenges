@@ -34,7 +34,7 @@ body{
     
     border-radius: 50%;
     width: 40px;
-    height: 40x;
+    height: 40px;
     padding: 2vmin;
     background-color: $Dark_Grey-color;
     }
@@ -54,33 +54,49 @@ body{
         color: $Medium_Grey-color;
     }
 }
-.number-all{
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.number {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding-bottom: 2rem;
-    p{
+    input{
+        display: none;
+    }
+    label{
+        border: 1px solid $Dark_Grey-color;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        font-weight: 700;
+        background-color: $Dark_Grey-color;
+        color: $Medium_Grey-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
-        padding: 1vmin;
-        font-size: 1.2rem;
-        font-weight: 700;
-        width: 40px;
-        height: 40px;
-        background-color: $Dark_Grey-color;
-        color: $Medium_Grey-color;
+        cursor: pointer;
         &:hover{
             background-color: $primary-color;
             color: $white-colr;
         }
         
-        
     }
+    input:checked + label{
+        background: $Medium_Grey-color;
+        color: $white-colr;
+    }
+
 }
 /* button */
 .btn{
+    width: 100%;
     button{
         font-size: .9rem;
         font-weight: 700;
