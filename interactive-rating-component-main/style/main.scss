@@ -7,7 +7,7 @@ $primary-color:hsl(25, 97%, 53%);
 $white-colr:hsl(0, 0%, 100%);
 $Light_Grey-color: hsl(217, 12%, 63%);
 $Medium_Grey-color: hsl(216, 12%, 54%);
-$Dark_Grey-color: hsla(216, 12%, 43%, 0.445);
+$Dark_Grey-color: hsla(216, 12%, 43%, 0.164);
 $Dark_Blue-colr: hsl(213, 19%, 18%);
 $Very_Dark_Blue-color: hsl(216, 12%, 8%);
 body{
@@ -111,6 +111,54 @@ form{
             background-color: $white-colr;
             color: $primary-color;
         }
+    }
+}
+
+/* tanks page  */
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    img{
+        width: 35vmin;
+    }
+}
+.selected{
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5vmin;
+        border: 1px solid $Dark_Grey-color;
+        border-radius:2rem ;
+        width: 35vmin;
+        font-weight: 500;
+        padding: .5rem;
+        color: $primary-color;
+        background-color: $Dark_Grey-color;
+    }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 5vmin;
+        padding-bottom: 1rem;
+        color: $white-colr;
+    }
+    p{
+        font-size: 2.7vmin;
+        text-align: center;
+        color: $Medium_Grey-color;
+        line-height: 1.5;
     }
 }
 

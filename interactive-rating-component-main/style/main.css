@@ -41,7 +41,7 @@ body {
   width: 40px;
   height: 40px;
   padding: 2vmin;
-  background-color: rgba(96, 107, 123, 0.445);
+  background-color: rgba(96, 107, 123, 0.164);
 }
 
 .container {
@@ -96,12 +96,12 @@ form {
 }
 
 .number label {
-  border: 1px solid rgba(96, 107, 123, 0.445);
+  border: 1px solid rgba(96, 107, 123, 0.164);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   font-weight: 700;
-  background-color: rgba(96, 107, 123, 0.445);
+  background-color: rgba(96, 107, 123, 0.164);
   color: #7c8798;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,5 +145,85 @@ form {
 .btn button:hover {
   background-color: white;
   color: #fb7413;
+}
+
+/* tanks page  */
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.image img {
+  width: 35vmin;
+}
+
+.selected {
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selected h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5vmin;
+  border: 1px solid rgba(96, 107, 123, 0.164);
+  border-radius: 2rem;
+  width: 35vmin;
+  font-weight: 500;
+  padding: .5rem;
+  color: #fb7413;
+  background-color: rgba(96, 107, 123, 0.164);
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text h1 {
+  font-size: 5vmin;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.text p {
+  font-size: 2.7vmin;
+  text-align: center;
+  color: #7c8798;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */
