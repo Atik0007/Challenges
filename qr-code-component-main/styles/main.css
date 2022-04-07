@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #d6e2f0;
+  height: 100vh;
+}
+
+body .postion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .card {
+  width: 46vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+body .card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: .5rem;
+}
+
+body .card h1 {
+  font-size: 3.3vmin;
+  text-align: center;
+  padding: 1rem 0;
+  color: #1f3251;
+}
+
+body .card p {
+  font-size: 2.5vmin;
+  text-align: center;
+  font-weight: 400;
+  color: #7b879d;
+  padding-bottom: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
