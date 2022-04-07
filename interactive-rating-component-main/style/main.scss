@@ -13,6 +13,7 @@ $Very_Dark_Blue-color: hsl(216, 12%, 8%);
 body{
     font-family: 'Overpass', sans-serif;
     background-color: $Very_Dark_Blue-color;
+    height: 100vh;
 }
 .position{
     display: flex;
@@ -162,3 +163,6 @@ form{
     }
 }
 
+#secend{
+    display: none;
+}

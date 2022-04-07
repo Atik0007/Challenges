@@ -8,6 +8,7 @@
 body {
   font-family: 'Overpass', sans-serif;
   background-color: #121417;
+  height: 100vh;
 }
 
 .position {
@@ -225,5 +226,9 @@ form {
   text-align: center;
   color: #7c8798;
   line-height: 1.5;
+}
+
+#secend {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
