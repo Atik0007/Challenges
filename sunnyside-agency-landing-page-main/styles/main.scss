@@ -25,7 +25,7 @@ a{
 }
 
 header {
-    background-image: url("../images/desktop/image-header.jpg");
+    background-image: url("../images/mobile/image-header.jpg");
     height: 100vh;
     width: 100vw;
 
@@ -70,8 +70,129 @@ header {
         }
         
     }
-        
-    
 
+    .articles{
+        font-family: 'Fraunces', serif;
+        width: 100vw;
+        .photo-1{
+            img{
+              width: 100%;  
+            }
+        }
+        .article-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            h2{
+                font-size: 8vmin;
+                font-weight: 900;
+                padding: 1rem 0; 
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-size: 5vmin;
+                padding-bottom: 1rem;
+            }
+            a{
+                color: black;
+                padding: 1rem 0;
+            }
+
+        }
+        .photo-2{
+            img{
+              width: 100%;
+            }
+        }
+        .article-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 1.5rem;
+            h2{
+                font-size: 8vmin;
+                font-weight: 900;
+                padding: 1rem 0; 
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-size: 5vmin;
+                padding-bottom: 1rem;
+            }
+            a{
+                color: black;
+                padding: 1rem 0;
+            }
+        }
+        .desing{
+            background-image: url("../images/mobile/image-graphic-design.jpg");
+            height: 100vh;
+            width: 100%;
+            background-size:cover;
+            background-position:center center;
+            display: flex;
+            
+            
+            align-items: flex-end;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+               
+                h2{
+                    font-size: 8vmin;
+                    font-weight: 900;
+                    padding: 1rem 0; 
+                    text-align: center;                  
+                }
+                p{
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 4.2vmin;   
+                    text-align: center;
+                    padding: 1rem 1rem 3rem 1rem;
+                    line-height: 1.5;
+                }
+            }
+            
+            
+
+        }
+        .photography{
+            background-image: url(../images/mobile/image-photography.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size:cover;
+            background-position:center center;
+            display: flex;
+            
+            
+            align-items: flex-end;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+               
+                h2{
+                    font-size: 8vmin;
+                    font-weight: 900;
+                    padding: 1rem 0; 
+                    text-align: center;                  
+                }
+                p{
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 4.2vmin;   
+                    text-align: center;
+                    padding: 1rem 1rem 3rem 1rem;
+                    line-height: 1.5;
+                }
+        }
+    }    
+    
+    }
     
 

@@ -11,7 +11,7 @@ a {
 }
 
 header {
-  background-image: url("../images/desktop/image-header.jpg");
+  background-image: url("../images/mobile/image-header.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -81,5 +81,172 @@ header {
 
 .header-main img {
   height: 38vw;
+}
+
+.articles {
+  font-family: 'Fraunces', serif;
+  width: 100vw;
+}
+
+.articles .photo-1 img {
+  width: 100%;
+}
+
+.articles .article-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.articles .article-1 h2 {
+  font-size: 8vmin;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+.articles .article-1 p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 5vmin;
+  padding-bottom: 1rem;
+}
+
+.articles .article-1 a {
+  color: black;
+  padding: 1rem 0;
+}
+
+.articles .photo-2 img {
+  width: 100%;
+}
+
+.articles .article-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.articles .article-2 h2 {
+  font-size: 8vmin;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+.articles .article-2 p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 5vmin;
+  padding-bottom: 1rem;
+}
+
+.articles .article-2 a {
+  color: black;
+  padding: 1rem 0;
+}
+
+.articles .desing {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.articles .desing div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles .desing div h2 {
+  font-size: 8vmin;
+  font-weight: 900;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.articles .desing div p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 4.2vmin;
+  text-align: center;
+  padding: 1rem 1rem 3rem 1rem;
+  line-height: 1.5;
+}
+
+.articles .photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.articles .photography div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles .photography div h2 {
+  font-size: 8vmin;
+  font-weight: 900;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.articles .photography div p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 4.2vmin;
+  text-align: center;
+  padding: 1rem 1rem 3rem 1rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */
