@@ -6,10 +6,17 @@
   list-style: none;
 }
 
+/* colors */
+/* Primary */
+/* Neutral */
+/* end-of-colors */
 a {
   text-decoration: none;
 }
 
+/* flex-function */
+/* end-of-flex-fanction */
+/* header */
 header {
   background-image: url("../images/mobile/image-header.jpg");
   height: 100vh;
@@ -32,7 +39,11 @@ header {
           align-items: center;
 }
 
-.header-container .header-nav ul {
+.header-container .control {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,8 +55,8 @@ header {
           align-items: center;
 }
 
-.header-container .header-nav ul li:nth-child(-1n + 4) {
-  display: none;
+.header-container .icon {
+  cursor: pointer;
 }
 
 .header-container .header-logo img {
@@ -53,46 +64,51 @@ header {
 }
 
 .header-main {
+  padding: 3rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 75%;
+  width: 100%;
 }
 
 .header-main h1 {
   font-size: 11vmin;
   text-align: center;
   color: #fff;
-  padding-bottom: 1rem;
+  padding: 3.8rem 0;
   font-weight: 600;
   font-family: 'Fraunces', serif;
   letter-spacing: 0.5rem;
 }
 
 .header-main img {
-  height: 38vw;
+  height: 7rem;
 }
 
-.articles {
+/* end-of-header */
+/* main */
+main .articles {
+  display: -ms-grid;
+  display: grid;
   font-family: 'Fraunces', serif;
   width: 100vw;
 }
 
-.articles .photo-1 img {
+main .articles .photo-1 img {
   width: 100%;
 }
 
-.articles .article-1 {
+main .articles .article-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,30 +121,33 @@ header {
           justify-content: center;
   text-align: center;
   padding: 1rem;
-}
-
-.articles .article-1 h2 {
-  font-size: 8vmin;
-  font-weight: 900;
-  padding: 1rem 0;
-}
-
-.articles .article-1 p {
-  font-family: 'Barlow', sans-serif;
-  font-size: 5vmin;
-  padding-bottom: 1rem;
-}
-
-.articles .article-1 a {
-  color: black;
-  padding: 1rem 0;
-}
-
-.articles .photo-2 img {
   width: 100%;
 }
 
-.articles .article-2 {
+main .articles .article-1 h2 {
+  font-size: 8vmin;
+  font-weight: 900;
+  padding: 1rem 0;
+  color: #23303e;
+}
+
+main .articles .article-1 p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 5vmin;
+  padding-bottom: 1rem;
+  color: #5a636c;
+}
+
+main .articles .article-1 a {
+  padding: 1rem 0;
+  color: #23303e;
+}
+
+main .articles .photo-2 img {
+  width: 100%;
+}
+
+main .articles .article-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,26 +160,29 @@ header {
           justify-content: center;
   text-align: center;
   padding: 1.5rem;
+  width: 100%;
 }
 
-.articles .article-2 h2 {
+main .articles .article-2 h2 {
   font-size: 8vmin;
   font-weight: 900;
   padding: 1rem 0;
+  color: #23303e;
 }
 
-.articles .article-2 p {
+main .articles .article-2 p {
   font-family: 'Barlow', sans-serif;
   font-size: 5vmin;
   padding-bottom: 1rem;
+  color: #5a636c;
 }
 
-.articles .article-2 a {
-  color: black;
+main .articles .article-2 a {
   padding: 1rem 0;
+  color: #23303e;
 }
 
-.articles .desing {
+main .articles .desing {
   background-image: url("../images/mobile/image-graphic-design.jpg");
   height: 100vh;
   width: 100%;
@@ -172,9 +194,11 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: #25564b;
 }
 
-.articles .desing div {
+main .articles .desing div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,14 +214,14 @@ header {
           flex-direction: column;
 }
 
-.articles .desing div h2 {
+main .articles .desing div h2 {
   font-size: 8vmin;
   font-weight: 900;
   padding: 1rem 0;
   text-align: center;
 }
 
-.articles .desing div p {
+main .articles .desing div p {
   font-family: 'Barlow', sans-serif;
   font-size: 4.2vmin;
   text-align: center;
@@ -205,7 +229,7 @@ header {
   line-height: 1.5;
 }
 
-.articles .photography {
+main .articles .photography {
   background-image: url(../images/mobile/image-photography.jpg);
   height: 100vh;
   width: 100%;
@@ -217,9 +241,11 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: #19536b;
 }
 
-.articles .photography div {
+main .articles .photography div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,18 +261,491 @@ header {
           flex-direction: column;
 }
 
-.articles .photography div h2 {
+main .articles .photography div h2 {
   font-size: 8vmin;
   font-weight: 900;
   padding: 1rem 0;
   text-align: center;
 }
 
-.articles .photography div p {
+main .articles .photography div p {
   font-family: 'Barlow', sans-serif;
   font-size: 4.2vmin;
   text-align: center;
   padding: 1rem 1rem 3rem 1rem;
   line-height: 1.5;
 }
+
+main .client {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  background-color: #fffbf8;
+  padding: 3rem 1rem;
+}
+
+main .client .headre-client {
+  font-family: 'Fraunces', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+  font-size: 4vmin;
+  letter-spacing: 2px;
+  color: #818498;
+}
+
+main .client .client-1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+main .client .client-1 img {
+  border-radius: 50%;
+  width: 20vmin;
+}
+
+main .client .client-1 .p1 {
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 4.5vmin;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  color: #23303e;
+}
+
+main .client .client-1 h2 {
+  font-size: 5vmin;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  color: #23303e;
+}
+
+main .client .client-1 .p2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 4vmin;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: #818498;
+}
+
+main .client .client-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+main .client .client-2 img {
+  border-radius: 50%;
+  width: 20vmin;
+}
+
+main .client .client-2 .p1 {
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 4.5vmin;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  color: #23303e;
+}
+
+main .client .client-2 h2 {
+  font-size: 5vmin;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  color: #23303e;
+}
+
+main .client .client-2 .p2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 4vmin;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: #818498;
+}
+
+main .client .client-3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+main .client .client-3 img {
+  border-radius: 50%;
+  width: 20vmin;
+}
+
+main .client .client-3 .p1 {
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 4.5vmin;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  color: #23303e;
+}
+
+main .client .client-3 h2 {
+  font-size: 5vmin;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  color: #23303e;
+}
+
+main .client .client-3 .p2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 4vmin;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: #818498;
+}
+
+main .images {
+  width: 100%;
+}
+
+main .images ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+main .images img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+/* end-of-main */
+/* footer */
+footer {
+  color: #458c7e;
+  font-family: 'Barlow', sans-serif;
+  background-color: #91d3c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer h2 {
+  padding: 2rem 0;
+  font-size: 11vmin;
+  font-weight: 800;
+}
+
+footer .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .main-footer li {
+  padding: 0 1.5rem;
+  font-weight: 300;
+}
+
+footer .main-footer li a {
+  color: #458c7e;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 0;
+}
+
+footer .social-media li {
+  padding: 0 .7rem;
+}
+
+/* end-of-footer */
+/* media */
+@media (max-width: 767px) {
+  .header-nav {
+    background-color: white !important;
+    position: absolute;
+    width: 90vw;
+    left: 5%;
+    top: 3rem;
+    display: none;
+  }
+  .header-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0 2rem 0;
+  }
+  .header-nav ul li {
+    font-family: 'Barlow', sans-serif;
+    padding: 1rem 0;
+  }
+  .header-nav ul li a {
+    color: #818498;
+  }
+  .header-nav ul li:nth-child(3) {
+    padding: 1rem 0 2rem 0;
+  }
+  .header-nav ul li:nth-child(4) {
+    background-color: #fad400;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+  }
+  .header-nav ul li:nth-child(4) a {
+    color: black;
+    font-family: 'Fraunces', serif;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+  header .header-container .header-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-container .header-nav ul li {
+    padding: 0 1rem;
+  }
+  header .header-container .header-nav ul li a {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+  }
+  header .header-container .header-nav ul li:nth-child(4) a {
+    font-family: 'Fraunces', serif;
+    color: black;
+    background-color: #fff;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+  }
+  header .header-container .icon {
+    display: none;
+  }
+  header .header-main h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0 4rem 0;
+    font-weight: 600;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 0.5rem;
+  }
+  header .header-main img {
+    height: 7rem;
+  }
+  main .articles {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main .articles .photo-1, main .articles .photo-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .articles .article-1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  main .articles .article-1, main .articles .article-2 {
+    text-align: left;
+    padding: 4rem;
+  }
+  main .articles .article-1 h2, main .articles .article-2 h2 {
+    font-size: 3vmax;
+    font-weight: 900;
+    padding: 1rem 0;
+  }
+  main .articles .article-1 p, main .articles .article-2 p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5vmax;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+  }
+  main .articles .article-1 a, main .articles .article-2 a {
+    padding: 1rem 0;
+    font-size: 1.5vmax;
+  }
+  main .articles .desing {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+  main .articles .desing div {
+    padding: 0 3.5rem;
+  }
+  main .articles .desing div h2 {
+    font-size: 3vmax;
+  }
+  main .articles .desing div p {
+    font-size: 1.5vmax;
+  }
+  main .articles .photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+  main .articles .photography div {
+    padding: 0 3.5rem;
+  }
+  main .articles .photography div h2 {
+    font-size: 3vmax;
+  }
+  main .articles .photography div p {
+    font-size: 1.5vmax;
+  }
+  main .client {
+    padding: 5rem 0;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'header header header' 'one two three';
+  }
+  main .client .headre-client {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: header;
+  }
+  main .client .headre-client h2 {
+    font-size: 2vmax;
+  }
+  main .client .client-1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  main .client .client-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: two;
+  }
+  main .client .client-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: three;
+  }
+  main .client .client-1 img, main .client .client-2 img, main .client .client-3 img {
+    border-radius: 50%;
+    width: 5vmax;
+  }
+  main .client .client-1 .p1, main .client .client-2 .p1, main .client .client-3 .p1 {
+    line-height: 1.5;
+    font-size: 1.5vmax;
+    padding: 2rem 1rem;
+  }
+  main .client .client-1 h2, main .client .client-2 h2, main .client .client-3 h2 {
+    font-size: 1.5vmax;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    color: #23303e;
+  }
+  main .client .client-1 .p2, main .client .client-2 .p2, main .client .client-3 .p2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8vmin;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    color: #818498;
+  }
+  main .images ul {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer h2 {
+    font-size: 3vmax;
+  }
+}
+
+/* end-of-media  */
 /*# sourceMappingURL=main.css.map */

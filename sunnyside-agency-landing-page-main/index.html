@@ -7,26 +7,37 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 
 <body>
+
+
+  <!-- header -->
+
   <header>
     <div class="header-container">
       <div class="header-logo">
         <img src="./images/logo.svg" alt="logo">
       </div>
-      <div class="header-nav">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#"><img src="./images/icon-hamburger.svg" alt="hamburger"></a></li>
-        </ul>
+      <div class="control">
+        <div onclick="myFunction()" class="icon">
+          <img src="./images/icon-hamburger.svg" alt="hamburger">
+        </div>
+        <div class="header-nav" id="click">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="header-main">
@@ -36,6 +47,10 @@
       <img src="./images/icon-arrow-down.svg" alt="">
     </div>
   </header>
+
+
+  <!-- main -->
+
   <main>
     <section class="articles">
       <div class="photo-1">
@@ -66,7 +81,6 @@
       </div>
       <div class="desing">
         <div>
-
           <h2>
             Graphic Design
           </h2>
@@ -78,7 +92,6 @@
       </div>
       <div class="photography">
         <div>
-
           <h2>
             Photography
           </h2>
@@ -88,12 +101,85 @@
           </p>
         </div>
       </div>
-
     </section>
-
+    <section class="client">
+      <div class="headre-client">
+        <h2>
+          CLIENT TESTIMONIALS
+        </h2>
+      </div>
+      <div class="client-1">
+        <img src="./images/image-emily.jpg" alt="">
+        <p class="p1">
+          We put our Trust in sunnyside and they delivered, making sure our needs were met and deadlines were always
+          hit.
+        </p>
+        <h2>
+          Emily R.
+        </h2>
+        <p class="p2">
+          Marketing Director
+        </p>
+      </div>
+      <div class="client-2">
+        <img src="./images/image-thomas.jpg" alt="">
+        <p class="p1">
+          Sunnysid's enthusiasm coupled with their keen intrest brand's seccess made it a satisfying and enjoyable
+          experience.
+        </p>
+        <h2>
+          Thomas S.
+        </h2>
+        <p class="p2">
+          Chief Oprating Officer
+        </p>
+      </div>
+      <div class="client-3">
+        <img src="./images/image-jennie.jpg" alt="">
+        <p class="p1">
+          Incredible and result! Our sales increased over 400% when we worked with Sunyside. Highly recommanded!
+        </p>
+        <h2>
+          Jennie F.
+        </h2>
+        <p class="p2">
+          Buslness Owner
+        </p>
+      </div>
+    </section>
+    <section class="images">
+      <ul>
+        <li><img src="./images/mobile/image-gallery-milkbottles.jpg" alt=""></li>
+        <li><img src="./images/mobile/image-gallery-orange.jpg" alt=""></li>
+        <li><img src="./images/mobile/image-gallery-cone.jpg" alt=""></li>
+        <li><img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt=""></li>
+      </ul>
+    </section>
   </main>
 
 
+
+  <!-- Footer -->
+
+  <footer>
+    <h2>
+      sunnyside
+    </h2>
+    <ul class="main-footer">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+    <ul class="social-media">
+      <li><a href="#"><img src="./images/icon-facebook.svg" alt=""></a></li>
+      <li><a href="#"><img src="./images/icon-instagram.svg" alt=""></a></li>
+      <li><a href="#"><img src="./images/icon-twitter.svg" alt=""></a></li>
+      <li><a href="#"><img src="./images/icon-pinterest.svg" alt=""></a></li>
+
+    </ul>
+
+  </footer>
+  <script src="./app.js"></script>
 </body>
 
 </html>
