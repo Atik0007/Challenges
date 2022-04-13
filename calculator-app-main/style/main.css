@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+/* Colors */
+html {
+  --main-background: hsl(222, 26%, 31%);
+  --keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --key-background: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-background-toggle: hsl(6, 63%, 50%);
+  --key-shadow-toggle: hsl(6, 70%, 34%);
+  --key-background-Num: hsl(30, 25%, 89%);
+  --key-shadow-Num: hsl(28, 16%, 65%);
+  --num-color: hsl(221, 14%, 31%);
+  --text-color: rgb(255, 255, 255);
+  --text-color-del-res: rgb(255, 255, 255);
+  --igual-color:rgb(255, 255, 255);
+}
+
+html.light {
+  --main-background: hsl(0, 0%, 90%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  --key-background: hsl(185, 43%, 36%);
+  --key-shadow: hsl(185, 58%, 25%);
+  --key-background-toggle: hsl(25, 98%, 40%);
+  --key-shadow-toggle: hsl(25, 99%, 27%);
+  --key-background-Num: hsl(45, 7%, 89%);
+  --key-shadow-Num: hsl(35, 11%, 61%);
+  --num-color: hsl(60, 10%, 19%);
+  --text-color: black;
+  --text-color-del-res: rgb(255, 255, 255);
+  --igual-color:rgb(255, 255, 255);
+}
+
+html.dark {
+  --main-background: hsl(268, 75%, 9%);
+  --screen-background: hsl(268, 71%, 12%);
+  --keypad-background:hsl(268, 71%, 12%);
+  --key-background: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --key-background-toggle: hsl(176, 100%, 44%);
+  --key-shadow-toggle: hsl(177, 92%, 70%);
+  --key-background-Num: hsl(268, 47%, 21%);
+  --key-shadow-Num: hsl(290, 70%, 36%);
+  --num-color: hsl(52, 100%, 62%);
+  --text-color-del-res: rgb(255, 255, 255);
+  --text-color: hsl(52, 100%, 62%);
+  --igual-color:hsl(198, 20%, 13%);
+}
+
+body {
+  font-weight: 700;
+  font-family: 'Spartan', sans-serif;
+  background-color: var(--main-background);
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+
+body .position {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .position .header {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 1rem 0;
+}
+
+body .position .header h1 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+body .position .header .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+body .position .header .theme h1 {
+  font-size: .7rem;
+}
+
+body .position .header .theme .pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .position .header .theme .pick h3 {
+  font-size: .7rem;
+  color: var(--text-color);
+  letter-spacing: 4px;
+}
+
+body .position .header .theme .pick .radio {
+  width: 3.7rem;
+  padding: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10rem;
+  background-color: var(--keypad-background);
+  gap: .3rem;
+}
+
+body .position .header .theme .pick .radio input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: var(--keypad-background);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+body .position .header .theme .pick .radio input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: var(--key-background-toggle);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+body .position .display-text {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 1rem 0;
+}
+
+body .position .display-text input {
+  background-color: var(--screen-background);
+  padding: 1rem;
+  text-align: right;
+  color: var(--text-color);
+  width: 100%;
+  height: 4rem;
+  border-radius: .4rem;
+  font-size: 1.5rem;
+}
+
+body .position .button {
+  display: -ms-grid;
+  display: grid;
+  width: 20rem;
+  border-radius: .4rem;
+  -ms-grid-columns: (4rem)[4];
+      grid-template-columns: repeat(4, 4rem);
+  gap: .5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: var(--keypad-background);
+}
+
+body .position .button button {
+  height: 4rem;
+  border-radius: .4rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--num-color);
+  background-color: var(--key-background-Num);
+}
+
+body .position .button button:hover {
+  background-color: var(--key-shadow-Num);
+}
+
+body .position .button .reset {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  background-color: var(--key-background);
+  color: var(--text-color-del-res);
+  font-size: 1rem;
+}
+
+body .position .button .reset:hover {
+  background-color: var(--key-shadow);
+}
+
+body .position .button .del {
+  background-color: var(--key-background);
+  color: var(--text-color-del-res);
+  font-size: 1rem;
+}
+
+body .position .button .del:hover {
+  background-color: var(--key-shadow);
+}
+
+body .position .button .igual {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/  5;
+  background-color: var(--key-background-toggle);
+  color: var(--igual-color);
+  font-size: 1rem;
+}
+
+body .position .button .igual:hover {
+  background-color: var(--key-shadow-toggle);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+
+<body>
+
+  <div class="position">
+
+    <section class="header">
+      <h1>
+        calc
+      </h1>
+      <div class="theme">
+        <h1>THEME</h1>
+        <div class="pick">
+          <h3>1 2 3</h3>
+          <div class="radio">
+            <input type="radio" name="theme" id="defult-theme" class="radioinput blue" onclick="defaultMode()">
+            <input type="radio" name="theme" id="light-theme" class="radioinput " onclick="lightMOde()">
+            <input type="radio" name="theme" id="dark-theme" class="radioinput" onclick="darkMode()">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="display-text">
+      <input type="text" name="" id="display" disabled="disabled" type="number" placeholder="0">
+    </section>
+    <section class="button">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="del">DEL</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button>/</button>
+      <button>*</button>
+      <button class="reset">RESET</button>
+      <button class="igual">=</button>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -10,10 +10,11 @@ function displayRadioValue() {
 
 function myFunction() {
   document.getElementById('secend').style.display = 'block';
-  let x = document.getElementById('fisrt');
+  document.getElementById('fisrt').style.display = 'none';
+  /* let x = document.getElementById('fisrt');
   if (x.style.display === 'none') {
     x.style.display = 'block';
   } else {
     x.style.display = 'none';
-  }
+  } */
 }
