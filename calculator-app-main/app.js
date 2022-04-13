@@ -1,4 +1,6 @@
 `use strict`;
+
+//function of calculadora
 let display = document.getElementById('display');
 let buttons = Array.from(document.getElementsByTagName('button'));
 buttons.map((button) => {
@@ -24,6 +26,8 @@ buttons.map((button) => {
     }
   });
 });
+
+//theme changer
 const html = document.querySelector('html');
 function lightMOde() {
   html.classList.toggle('light');
