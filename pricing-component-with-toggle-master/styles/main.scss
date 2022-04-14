@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Colors */
+
+/* Primary */
+
+$Linear-Gradient: hsl(236, 72%, 79%);
+$Linear: hsl(237, 63%, 64%);
+
+/* Neutral */
+$white:white;
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-lue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+
+body{
+    background-color: $Very-Light-Grayish-Blue;
+    background-image: url(../images/bg-top.svg) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%  ;
+
+    //header
+
+    header{
+        width: 100vw;
+        h1{
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $Grayish-Blue;
+            font-size: 7vmin;
+        }
+        .pick{
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            p{
+                font-size: 3.3vmin;
+                color: $Light-Grayish-lue;
+            }
+        }
+    }
+    //main
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        gap: 1rem;
+        span{
+            font-size: 10vmin;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: .5rem;
+            width: 100%;
+            padding: 1rem;
+            p{
+                font-size: 3.3vmin;
+                padding: 1rem 0;
+                color: $Grayish-Blue;
+                width: 100%;
+                text-align: center;
+            }
+            h1{
+                font-size: 17vmin;
+                color: $Dark-Grayish-Blue;
+            }
+            p:nth-child(3),p:nth-child(4),p:nth-child(5){
+                border-bottom: 2px solid $Light-Grayish-lue;
+            }
+            .button{
+                width: 100%;
+                padding: 1rem 0;
+                button{
+                    width: 100%;
+                    height: 2.5rem;
+                    color: $white;
+                    background-color: $Linear;
+                    border-radius: .5rem;
+                    border: none;
+                    
+                }
+            }
+
+        }
+
+        .card-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:$Linear ;
+            border-radius: .5rem;
+            width: 100%;
+            padding: 1rem;
+            
+            p{
+                font-size: 3.3vmin;
+                padding: 1rem 0;
+                color: $white;
+                width: 100%;
+                text-align: center;
+            }
+            h1{
+                font-size: 17vmin;
+                color: $white;
+            }
+            p:nth-child(3),p:nth-child(4),p:nth-child(5){
+                border-bottom: 2px solid $Linear-Gradient;
+            }
+            .button{
+                width: 100%;
+                padding: 1rem 0;
+                button{
+                    width: 100%;
+                    height: 2.5rem;
+                    color: $Linear;
+                    background-color: $white;
+                    border-radius: .5rem;
+                    border: none;
+                    
+                }
+            }
+
+        }
+
+        .card-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: .5rem;
+            width: 100%;
+            padding: 1rem;
+            p{
+                font-size: 3.3vmin;
+                padding: 1rem 0;
+                color: $Grayish-Blue;
+                width: 100%;
+                text-align: center;
+            }
+            h1{
+                font-size: 17vmin;
+                color: $Dark-Grayish-Blue;
+            }
+            p:nth-child(3),p:nth-child(4),p:nth-child(5){
+                border-bottom: 2px solid $Light-Grayish-lue;
+            }
+            .button{
+                width: 100%;
+                padding: 1rem 0;
+                button{
+                    width: 100%;
+                    height: 2.5rem;
+                    color: $white;
+                    background-color: $Linear;
+                    border-radius: .5rem;
+                    border: none;
+                    
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// button animation
+.label{
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label-text{
+    margin-left: 16px;
+}
+
+.toggle{
+    isolation: isolate;
+    position: relative;
+    height: 25px;
+    width: 55px;
+    border-radius: 15px;
+    overflow: hidden;
+   background-color: $Linear;
+   &:hover{
+       background-color: $Light-Grayish-lue;
+   }
+
+}
+
+.toggle-state{
+    display: none;
+}
+
+.indicator{
+    height: 100%;
+    width: 200%;
+    background: $Very-Light-Grayish-Blue;
+    border-radius: 15px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+   
+}
+
+.toggle-state:checked ~ .indicator{
+    transform: translate3d(25%, 0, 0);
+}
+
